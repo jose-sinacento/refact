@@ -5,46 +5,56 @@
   text-align: center;
 }
 
+
+body {
+  background-color: rgba(197, 137, 26, 0.726);
+}
+
 .envoltura {
-  display: inline;
+  display: flex;
+  flex-direction: column;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.6194852941176471) 40%, rgba(252,176,69,1) 86%);
 }
 
-.envoltura > div {
-  display: inline-block;
+.top {
+  display: flex;
+  flex-direction: row;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  justify-content: space-around;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.calculadora {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button {
+  width: 20px;
+  text-align: center;
 }
 
-.card {
-  padding: 2em;
+input {
+  width: 50px;
+  text-align: center;
 }
 
-.read-the-docs {
-  color: #888;
+img {
+  width: 150px;
+}
+
+li {
+  list-style: none;
+}
+
+.bottom {
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
